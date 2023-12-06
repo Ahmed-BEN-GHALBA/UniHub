@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-------- Logo de site dans la tab du navigateur -------->
+    <link rel="icon" href="/pics/11.png" type="image/x-icon">
+    <!-------- Les liens des fichiers de style utilisés ( bootstrap / css ) -------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"></link>
+    <link rel="stylesheet" href="home_page.css">
+    <!-------- Titre de site web -------->
+    <title>UniHub</title>
+</head>
+
+<body>
+    <!-------- Navigation barre -------->
+    <nav class="navbar sticky-top bg-body-tertiary mb-3" style="background-color: #1c253b">
+        <div class="container-fluid">
+            <!-------- Logo de site -------->
+            <a class="navbar-brand mr-5" href="#">
+                <img src="/pics/11.png" alt="Logo" width="70" height="70" class="d-inline-block align-text-top" style="border-radius: 15px;">
+            </a>
+            <!-------- Slogan -------->
+            <h3 style="color:white; font-family:lilita one;" class="ml-5">Your partner for academic excellence</h3>
+            <!-------- Serch field -------->
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">&nbsp;
+                <button class="btn btn-outline-info" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-------- Corp de site -------->
+    <div class="container light-style flex-grow-1 container-p-y pt-1">
+        <!-------- Interface Principale -------->
+        <div class="card">
+            <div class="card overflow-hidden">
+                <div class="row no-gutters row-bordered row-border-light">
+                    <!-------- barre latérale  -------->
+                    <div class="col-md-3 pt-0" style="background-color:#1c253b ;" >
+                        <!-------- Liste des fonctions dans la barre laterale -------->
+                        <div class="list-group list-group-flush account-settings-links">
+                            <a class="list-group-item list-group-item-action active" data-toggle="list" href="#home-page">Home page</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-general">Account settings</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#Calendar">Consult calendar</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#Grades">Consult grades</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#Absences">Consult absences</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#Messages">Messages</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#Complaints">Complaints</a>
+                        </div>
+                    </div>
+                    <!-------- Fenetre de fonction -------->
+                    <div class="col-md-9">
+                        <div class="tab-content">
+                            <div class="tab-pane fade active show" id="home-page">
+                                    <div class="container">
+                                        <h5 style="color: white;" class="text-center mt-2">Latest News and Updates</h5>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="card mb-4">
+                                                    <img src="/pics/courses.webp" class="card-img-top" alt="News 1"  width="100" height="170">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title font-italic">New Course Added!</h5>
+                                                        <p class="card-text">Exciting news, everyone! We've just added a brand new course to our curriculum</p>
+                                                        <a href="#" class="btn btn-outline-secondary">Read More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="card mb-4">
+                                                    <img src="/pics/holiday.webp" class="card-img-top" alt="News 2"  width="60" height="145">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title font-italic">Upcoming Holiday Schedule</h5>
+                                                        <p class="card-text">Dear students, We would like to inform you about our upcoming holiday schedule for our institute</p>
+                                                        <a href="#" class="btn btn-outline-secondary">Read More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="card mb-4">
+                                                    <img src="/pics/diploma.webp" class="card-img-top" alt="News 2"  width="60" height="130">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title font-italic">Our certifications</h5>
+                                                        <p class="card-text">Discover our certifications and advance your career today! Our programs are designed to give you the knowledge and skills you need to succeed in your field</p>
+                                                        <a href="#" class="btn btn-outline-secondary">Read More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="border-light m-0 mb-4">
+                                        <h5 style="color: white;" class="text-center mt-2">Join our daily blogs</h5>
+                                        <div class="input-group mb-3 mt-3">
+                                            <input type="email" class="form-control rounded-3" placeholder="Type your E-mail" aria-describedby="button-addon2">&nbsp;&nbsp;
+                                            <button class="btn btn-outline-secondary rounded-3" type="button" id="button-addon2">Subscribe</button>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="account-general">
+                                <div class="card-body media align-items-center">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="d-block ui-w-80">
+                                    <div class="media-body ml-4">
+                                        <label class="btn btn-outline-secondary"> Upload new photo
+                                            <input type="file" class="account-settings-fileinput">
+                                        </label> &nbsp;
+                                        <button type="button" class="btn btn-default md-btn-flat btn-outline-secondary">Reset</button>
+                                        <div class="text-light small mt-1">Allowed JPG, GIF or PNG. Max size of 800K </div>
+                                    </div>
+                                </div>
+                                <hr class="border-light m-0">
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label class="form-label">First name</label>
+                                        <input type="text" class="form-control mb-1" value="nmaxwell">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Last name</label>
+                                        <input type="text" class="form-control" value="Nelle Maxwell">
+                                    </div>
+                                    <br>
+                                    <hr class="border-light m-0"><br>
+                                    <div class="form-group">
+                                        <label class="form-label">New password</label>
+                                        <input type="password" class="form-control" value="********">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Repeat new password</label>
+                                        <input type="password" class="form-control" value="********">
+                                    </div>
+                                </div>
+                                <div class="text-right mt-3">
+                                    <button type="button" class="btn">Save changes</button>&nbsp;
+                                    <button type="button" class="btn btn-default">Cancel</button>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="Calendar">
+                                <div class="text-right mt-3">
+                                    <div class="text-center mt-5 ">
+                                        <section class="tabs">
+                                            <div class="container">
+                                              <div id="tab-1" class="tab-item tab-border">
+                                                <p class="tab-name">Time Table</p>
+                                              </div>
+                                              <div id="tab-2" class="tab-item">
+                                                <p class="tab-name">Exams dates</p>
+                                              </div>
+                                              <div id="tab-3" class="tab-item">
+                                                <p class="tab-name">Projects Deadlines</p>
+                                              </div>
+                                            </div>
+                                          </section>
+                                        
+                                          <section class="tab-content">
+                                            <div class="container">
+                                        
+                                            <div id="tab-1-content" class="tab-content-item show">
+                                                <div class="text-right m-3">
+                                                    <img src="/pics/table.png" alt="Image not found" width="750" height="400">
+                                                </div>
+                                            </div>
+                                        
+                                            <div id="tab-2-content" class="tab-content-item">
+                                                <div class="text-right m-3">
+                                                    <img src="/pics/exams.jpg" alt="Image not found" width="750" height="400">
+                                                </div>
+                                            </div>
+                                        
+                                              <div id="tab-3-content" class="tab-content-item">
+                                                <section>
+                                                    <div class="container py-5 h-100">
+                                                      <div class="row d-flex justify-content-center align-items-center h-100">
+                                                        <div class="col col-xl-10">
+                                                          <div class="card" style="border-radius: 15px;">
+                                                            <div class="card-body">                                                
+                                                              <h6 class="mb-3">Add a new task to complete</h6>                                                 
+                                                              <form class="d-flex justify-content-center align-items-center mb-4 ">
+                                                                <div class="form-outline flex-fill">
+                                                                  <input type="text" id="form3" class="form-control" />
+                                                                </div>
+                                                                <button type="submit" class="btn btn-outline-secondary rounded-3">Add</button>
+                                                              </form>
+                                                  
+                                                              <ul class="list-group mb-0">
+                                                                <li class="list-group-item d-flex justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-3 mb-2 bg-dark">
+                                                                  <div class="d-flex align-items-center p-1" style="color: white; font-size: 14px; font-weight: 400;">
+                                                                    <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." /> Python report 
+                                                                  </div>
+                                                                  <a href="#!" data-mdb-toggle="tooltip" title="Remove item">
+                                                                    <i class="fas fa-times text-danger"></i>
+                                                                  </a>
+                                                                </li>
+                                                                <li class="list-group-item d-flex d-flex justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-3 mb-2 bg-dark">
+                                                                  <div class="d-flex align-items-center p-1" style="color: white; font-size: 14px; font-weight: 400;">
+                                                                    <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." checked />
+                                                                    <s>Projet federé presentation</s>
+                                                                  </div>
+                                                                  <a href="#!" data-mdb-toggle="tooltip" title="Remove item">
+                                                                    <i class="fas fa-times text-danger"></i>
+                                                                  </a>
+                                                                </li>
+                                                            </div>
+                                                          </div>
+                                                  
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                </section>
+                                              </div>
+                                            </div>
+                                          </section>                                  
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="Grades">
+                                <div class="text-right m-3">
+                                    <img src="/pics/35050432.jpg" alt="Image not found">
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="Absences">
+                                <div class="m-4 pr-3" >
+                                    <img src="/pics/EXCEL_2017-03-08_11-59-11.png" alt="Image not found" width="900">
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="Messages">
+                                <div>
+                                    <img src="/pics/hero-section-animation.gif" alt="Image not found">
+                                    <hr>
+                                    <h5 style="color:rgba(255, 255, 255, 0.9);font-size: 17px; text-align: center;">Section under construction , Wait for the release</h5>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="Complaints">
+                                <div>
+                                    <img src="/pics/hero-section-animation.gif" alt="Image not found">
+                                    <hr>
+                                    <h5 style="color:rgba(255, 255, 255, 0.9);font-size: 17px; text-align: center;">Section under construction , Wait for therelease</h5>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------- Pied de page -------->
+    <footer class=" text-center text-white fixed-bottom">
+        <div class="container pt-2">
+          <!-------- Les icones des reseaux sociaux -------->  
+          <section class="mb-1">
+            <a class="btn text-white btn-floating m-1 rounded-circle" style="background-color: #3b5998;" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn text-white btn-floating m-1 rounded-circle" style="background-color: #55acee;" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+            <a class="btn text-white btn-floating m-1 rounded-circle"style="background-color: #dd4b39;"href="#!"role="button"><i class="fab fa-google"></i></a>
+            <a class="btn text-white btn-floating m-1 rounded-circle"style="background-color: #ac2bac;"href="#!"role="button"><i class="fab fa-instagram"></i></a>
+            <a class="btn text-white btn-floating m-1 rounded-circle"style="background-color: #0082ca;"href="#!"role="button"><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn text-white btn-floating m-1 rounded-circle"style="background-color: #333333;"href="#!"role="button"><i class="fab fa-github"></i></a>
+          </section>
+        </div>
+        <!-------- text des droits -------->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright: All rights reserved .
+          <a class="text-white" href="#/">UniHub</a>
+        </div>
+    </footer>
+
+    <!-------- Liens des scripts javascript utilisé-------->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="home_page.js"></script>
+</body>
+</html>
